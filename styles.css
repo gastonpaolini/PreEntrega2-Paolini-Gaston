@@ -50,21 +50,21 @@ font-family: 'Source Serif Pro', serif; */
     height: calc(100vh - 80px)
 }
 
-.principalbio{
+.principalbio {
     background-image: url(./Background/background1.png);
 }
 
-.principalcontacto{
+.principalcontacto {
     background-image: url(./Background/background2.png);
 }
 
-.principalshow{
+.principalshow {
     background-image: url(./Background/12-11bARMAGICO-31.jpg);
     background-size: contain;
 }
 
-.principalmedia{
-    background-image: url(./Background/Dorso.png);
+.principalmedia {
+    background-color: #1a1a1a;
 }
 
 header {
@@ -264,64 +264,79 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.item{
+.galeria{
     padding: 20px;
-    margin: 35px;
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
-    border: 3px solid black;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
+    margin: 10px;
+    height: calc(100vh - 80px);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3 ,1fr);
-    grid-template-areas:
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat( 3, 1fr);
+    grid-template-areas: 
     "item1 item2 item3 item3"
     "item1 item4 item5 item6"
     "item7 item4 item8 item8";
 }
 
+.media{
+    border: solid 2px black ;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    filter: grayscale(1);
+    transition: all 0.9s;
+}
+
+.media:hover{
+    filter: grayscale(0);
+    transition: all 0.9s;
+    z-index:+1;
+    box-shadow: 1px white;
+    transform: scale(1.22);
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+}
+
 .item1{
-    background-image: url(./Background/1.jpg);
+    background-image: url(./media/31.jpg);
     grid-area: item1;
+    background-size: cover;
 }
-
 .item2{
-    background-image: url(./Background/2.jpg);
+    background-image: url(./media/2.jpg);
     grid-area: item2;
-
+    background-size: cover;
 }
-
 .item3{
-    background-image: url(./Background/3.jpg);
+    background-image: url(./media/32.jpg);
     grid-area: item3;
+    background-size: cover;
+    background-position-y: center ;
 }
-
 .item4{
-    background-image: url(./Background/4.jpg);
+    background-image: url(./media/4.jpg);
     grid-area: item4;
+    background-size: cover;
+    background-position: center;
 }
-
 .item5{
-    background-image: url(./Background/5.jpg);
+    background-image: url(./media/5.jpg);
     grid-area: item5;
+    background-size: cover;
 }
-
 .item6{
-    background-image: url(./Background/6.jpg);
+    background-image: url(./media/6.jpg);
     grid-area: item6;
+    background-size: cover;
 }
-
 .item7{
-    background-image: url(./Background/7.jpg);
+    background-image: url(./media/7.jpg);
     grid-area: item7;
+    background-size: cover;
 }
-
 .item8{
-    background-image: url(./Background/8.jpg);
+    background-image: url(./media/33.jpg);
     grid-area: item8;
+    background-size: cover;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
