@@ -335,7 +335,7 @@ footer:hover {
     background-color: #fff;
 }
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:420px) {
 
     header {
         display: flex;
@@ -362,12 +362,6 @@ footer:hover {
         display: flex;
         justify-content: end;
     }
-
-    .navbar-toggler .collapsed {
-        display: flex;
-        order: 2;
-    }
-
 
     .nav-link {
         color: rgb(121, 114, 114);
