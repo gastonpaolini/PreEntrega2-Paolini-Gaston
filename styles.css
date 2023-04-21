@@ -44,10 +44,27 @@ font-family: 'Source Serif Pro', serif; */
 }
 
 .principal {
-    background-image: url(./Background/background3.jpg) !important;
+    background-image: url(./Background/background4.jpg) !important;
     background-size: cover;
     background-position: center;
     height: calc(100vh - 80px)
+}
+
+.principalbio{
+    background-image: url(./Background/background1.png);
+}
+
+.principalcontacto{
+    background-image: url(./Background/background2.png);
+}
+
+.principalshow{
+    background-image: url(./Background/12-11bARMAGICO-31.jpg);
+    background-size: contain;
+}
+
+.principalmedia{
+    background-image: url(./Background/Dorso.png);
 }
 
 header {
@@ -87,12 +104,13 @@ header {
 
 
 .nav-link {
-    color: rgb(121, 114, 114);
+    color: rgb(255, 255, 255);
     transition: all 0.9s;
     font-size: 32px;
     font-family: Ricordi;
     display: flex;
     justify-content: right;
+    -webkit-text-stroke: 0.25px #5372ff;
 }
 
 .nav-link:hover {
@@ -100,6 +118,7 @@ header {
     font-size: 45px;
     text-shadow: 0 0 3px rgb(226, 90, 90);
     color: rgb(146, 10, 10) !important;
+    -webkit-text-stroke: 0.25px rgb(146, 10, 10);
 }
 
 #div1 {
@@ -245,26 +264,67 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-#media {
-    padding: 20px;
-}
-
-.media {
+.item{
     padding: 20px;
     margin: 35px;
-    height: 500px;
-    width: auto;
-    border-radius: 100%;
-    opacity: 0.3;
-    /* Aca tenes que aplicar GRID */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3 ,1fr);
+    grid-template-areas:
+    "item1 item2 item3 item3"
+    "item1 item4 item5 item6"
+    "item7 item4 item8 item8";
 }
 
-.media:hover {
-    border-radius: 0%;
-    border: solid 10px white;
-    opacity: 1;
+.item1{
+    background-image: url(./Background/1.jpg);
+    grid-area: item1;
 }
 
+.item2{
+    background-image: url(./Background/2.jpg);
+    grid-area: item2;
+
+}
+
+.item3{
+    background-image: url(./Background/3.jpg);
+    grid-area: item3;
+}
+
+.item4{
+    background-image: url(./Background/4.jpg);
+    grid-area: item4;
+}
+
+.item5{
+    background-image: url(./Background/5.jpg);
+    grid-area: item5;
+}
+
+.item6{
+    background-image: url(./Background/6.jpg);
+    grid-area: item6;
+}
+
+.item7{
+    background-image: url(./Background/7.jpg);
+    grid-area: item7;
+}
+
+.item8{
+    background-image: url(./Background/8.jpg);
+    grid-area: item8;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
 .formulario {
     color: white;
     display: inline;
