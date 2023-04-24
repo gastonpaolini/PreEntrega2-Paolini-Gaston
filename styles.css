@@ -631,6 +631,8 @@ h1 {
     box-shadow: 0 0 5px white;
 }
 
+/* --------------------------------------------------------------------------------------------------------- */
+
 footer {
     background-color: rgb(226, 80, 76);
     transition: all 1.09s;
@@ -776,5 +778,61 @@ footer:hover {
         align-items: center;
     }
 
+    .principalcontacto{
+        background-image: url(./Background/background8.jpg);
+        background-size: inherit ;
+        height: auto;
+    }
 
+    .formulario1{
+        font-size: 25px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #1a1a1ab7;
+        font-family: "Instrument Serif", serif;
+        box-shadow: 0 0 5px #fff;
+        border-radius: 10px;
+    }
+    
+    label{
+        background-color:  rgba(247, 48, 51, 0.486);
+        margin: 5px;
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    #icoment{
+        display: flex;
+    }
+    .enviar {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        background-color: #5372ff;
+        font-weight: bold;
+        color: azure;
+        text-shadow: 0 0 5px #1a1a1a;
+        font-family: "PT Sans Narrow", sans-serif;
+        text-align: center;
+    }
+    
+    .enviar:hover {
+        box-shadow: 0 0 5px white;
+    }
+    
+    .reset {
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        background-color: rgb(247, 48, 50);
+        font-weight: bold;
+        color: azure;
+        text-shadow: 0 0 5px #1a1a1a;
+        font-family: "PT Sans Narrow", sans-serif;
+        text-align: center;
+    }
+    
+    .reset:hover {
+        box-shadow: 0 0 5px white;
+    }
 }
