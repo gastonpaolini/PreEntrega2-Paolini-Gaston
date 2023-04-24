@@ -275,6 +275,7 @@ h1 {
 .show0 {
     color: #fff;
     background-color: #1a1a1acb;
+    font-size: 25px;
 
 }
 
@@ -287,9 +288,10 @@ h1 {
         "tipo2 tipo4 tipo6 tipo8";
     padding: 10px;
     margin: 10px;
-    height: 300px;
     border-radius: 10px;
     transition: all 1.09s;
+    line-height: 25px;
+    height: auto;
 }
 
 .tipo1 {
@@ -302,7 +304,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 70px;
+    height: 150px;
     border-radius: 10px;
     background-color: rgb(247, 48, 50);
     filter: sepia(1);
@@ -352,13 +354,13 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 70px;
+    height: 150px;
     border-radius: 10px;
     background-color: #5372ff;
     filter: sepia(1);
     transition: all 1.09s;
     text-shadow: 0 0 5px black;
-    font-size: 25px
+    font-size: 25px;
 }
 
 .tipo3:hover {
@@ -705,13 +707,13 @@ footer:hover {
     .principalshow {
         background-image: url(./Background/background6.png);
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
 
     .showtipo {
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
             "tipo1"
             "tipo2"
@@ -722,12 +724,10 @@ footer:hover {
             "tipo7"
             "tipo8";
             justify-content: center;
-            height: 200px;
-
+            height: auto;
     }
-
     .galeria {
-        height: 900px;
+        height: calc(100vh - 80px);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
@@ -739,6 +739,7 @@ footer:hover {
             "item6"
             "item7"
             "item8";
+            height: auto;
     }
 
     .item1 {
