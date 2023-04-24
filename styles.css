@@ -473,7 +473,7 @@ footer:hover {
     background-color: #fff;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768px) {
 
     .principal {
         background-size: cover;
