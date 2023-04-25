@@ -39,20 +39,17 @@ body {
     height: calc(100vh - 80px);
 }
 
-
 .principal {
     background-image: url(./Background/background4.jpg) !important;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 80px);
+    height: 100%
 }
 
 .principalbio {
     background-image: url(./Background/background11.png);
     background-size: cover;
     background-position: initial;
-    height: auto;
-
 }
 
 .principalcontacto {
@@ -62,13 +59,10 @@ body {
 .principalshow {
     background-image: url(./Background/background6.png);
     background-size: cover;
-    height: calc(100vh - 80px);
 }
 
 .principalmedia {
     background-color: #1a1a1a;
-    height: auto;
-    width: auto;
 }
 
 .navbar-brand {
@@ -138,17 +132,17 @@ body {
     font-family: "Instrument Serif", serif;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     margin: 30px;
 }
 
-a:hover{
+a:hover {
     color: #1a1a1a;
 }
 
-h1{
+h1 {
     color: white;
     padding: 10px;
     margin: 0px;
@@ -203,8 +197,8 @@ h1{
     background-image: url(./Background/dorsos.png);
     grid-area: fotobio1;
     background-size: cover;
-    height: 450px;
-    width: 350px;
+    height: 70vh;
+    width: 50vh;
     transition: all 0.9s;
 }
 
@@ -216,14 +210,15 @@ h1{
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
+
 }
 
 .fotobio2 {
     background: url(./Background/dorsos.png);
     grid-area: fotobio2;
     background-size: cover;
-    height: 450px;
-    width: 350px;
+    height: 70vh;
+    width: 50vh;
     transition: all 0.9s;
 }
 
@@ -241,8 +236,8 @@ h1{
     background: url(./Background/dorsos.png);
     grid-area: fotobio3;
     background-size: cover;
-    height: 450px;
-    width: 350px;
+    height: 70vh;
+    width: 50vh;
     transition: all 0.9s;
 }
 
@@ -490,7 +485,7 @@ h1{
 .galeria {
     padding: 20px;
     margin: 10px;
-    height: calc(100vh - 80px);
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -578,16 +573,9 @@ h1{
     font-size: 20px;
     padding: 10px;
     margin: 10px;
-}
-
-#fomrh1 {
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-}
-
-#formulario {
-    padding: 20px;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -631,10 +619,11 @@ label {
 
 /* --------------------------------------------------------------------------------------------------------- */
 
-footer{
+footer {
     background-color: rgb(226, 80, 76);
     transition: all 1.09s;
     filter: grayscale(100%);
+    width: 100%;
 }
 
 footer:hover {
@@ -677,6 +666,7 @@ footer:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* Estas propiedades de CSS solo se ejecutaran cuando la pantalla sea menos ancha que 768 */
     .principal {
         background-position: initial;
@@ -721,19 +711,6 @@ footer:hover {
         font-size: 20px;
     }
 
-    .foto {
-        height: 250px;
-        width: auto;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "fotobio1"
-            "fotobio2"
-            "fotobio3";
-    }
-
     .nav-link:hover {
         font-size: 28px;
     }
@@ -746,7 +723,7 @@ footer:hover {
         width: auto;
     }
 
-    .bio{
+    .bio {
         font-size: 16px;
     }
 
@@ -756,11 +733,12 @@ footer:hover {
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat( 3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "fotobio1"
-            "fotobio2" 
+            "fotobio2"
             "fotobio3";
+        place-items: center;
     }
 
     .showtipo {
@@ -795,7 +773,7 @@ footer:hover {
             "item8";
         height: calc(100vh *2);
     }
-    
+
 
     .item1 {
         background-size: cover;
@@ -838,13 +816,13 @@ footer:hover {
         width: auto;
     }
 
-        .formulario{
-            font-size: 16px;
-        }
+    .formulario {
+        font-size: 14px;
+    }
 
 
     .formulario1 {
-        font-size: 25px;
+        font-size: 20px;
         padding: 10px;
         margin: 10px;
         background-color: #1a1a1ab7;
@@ -854,53 +832,19 @@ footer:hover {
     }
 
     #icoment {
-        display: flex;
+        display: grid;
+        place-items: center;
     }
 
-    .enviar {
-        border-radius: 10px;
-        padding: 5px;
-        margin: 5px;
-        background-color: #5372ff;
-        font-weight: bold;
-        color: azure;
-        text-shadow: 0 0 5px #1a1a1a;
-        font-family: "PT Sans Narrow", sans-serif;
-        text-align: center;
-    }
-
-    .enviar:hover {
-        box-shadow: 0 0 5px white;
-    }
-
-    .reset {
-        border-radius: 10px;
-        padding: 5px;
-        margin: 5px;
-        background-color: rgb(247, 48, 50);
-        font-weight: bold;
-        color: azure;
-        text-shadow: 0 0 5px #1a1a1a;
-        font-family: "PT Sans Narrow", sans-serif;
-        text-align: center;
-    }
-
-    .reset:hover {
-        box-shadow: 0 0 5px white;
-    }
-
-    footer{
-    height: auto;
-    }
-    .pfooter{
+    .pfooter {
         text-align: center;
         font-size: 20px;
     }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-}
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
 }
