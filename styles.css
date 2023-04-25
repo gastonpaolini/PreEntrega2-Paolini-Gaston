@@ -54,7 +54,10 @@ header {
 }
 
 .principalbio {
-    background-image: url(./Background/background1.png);
+    background-image: url(./Background/background10.png);
+    background-size: cover;
+    background-position: inherit;
+    height: auto;
 }
 
 .principalcontacto {
@@ -64,6 +67,7 @@ header {
 .principalshow {
     background-image: url(./Background/background6.png);
     background-size: cover;
+    height: calc(100vh - 80px);
 }
 
 .principalmedia {
@@ -136,23 +140,6 @@ header {
     font-family: "Instrument Serif", serif;
 }
 
-#div1 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-#video {
-    border-radius: 10%;
-}
-
-.div2 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 127, 80, 0.822);
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -200,25 +187,25 @@ h1 {
     background-color: red;
 }
 
-.foto {
-    height: 700px;
-    width: 800px;
+.foto{
+    height: 100%;
+    width: auto;
     border-radius: 10px;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
     display: grid;
-    justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "fotobio1 fotobio2 fotobio3";
+    grid-template-areas: 
+    "fotobio1 fotobio2 fotobio3";
 }
 
 .fotobio1 {
-    background: url(./Background/Dorso.png);
+    background-image: url(./Background/dorsos.png);
     grid-area: fotobio1;
     background-size: cover;
-    height: 650px;
-    width: 450px;
+    height: 450px;
+    width: 350px;
     transition: all 0.9s;
 }
 
@@ -233,11 +220,11 @@ h1 {
 }
 
 .fotobio2 {
-    background: url(./Background/Dorso.png);
+    background: url(./Background/dorsos.png);
     grid-area: fotobio2;
     background-size: cover;
-    height: 650px;
-    width: 450px;
+    height: 450px;
+    width: 350px;
     transition: all 0.9s;
 }
 
@@ -252,11 +239,11 @@ h1 {
 }
 
 .fotobio3 {
-    background: url(./Background/Dorso.png);
+    background: url(./Background/dorsos.png);
     grid-area: fotobio3;
     background-size: cover;
-    height: 650px;
-    width: 450px;
+    height: 450px;
+    width: 350px;
     transition: all 0.9s;
 }
 
@@ -268,14 +255,15 @@ h1 {
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
-}
+} 
 
 /* --------------------------------------------------------------------------------------------------------- */
 
 .show0 {
     color: #fff;
     background-color: #1a1a1acb;
-    font-size: 25px;
+    font-size: 32px;
+    height: 60px;
 
 }
 
@@ -294,6 +282,14 @@ h1 {
     height: auto;
 }
 
+.show{
+    height: 70px;
+}
+
+.showp{
+    height: auto;
+}
+
 .tipo1 {
     color: rgb(255, 255, 255);
     grid-area: tipo1;
@@ -304,7 +300,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 150px;
     border-radius: 10px;
     background-color: rgb(247, 48, 50);
     filter: sepia(1);
@@ -354,7 +349,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 150px;
     border-radius: 10px;
     background-color: #5372ff;
     filter: sepia(1);
@@ -404,7 +398,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 70px;
     border-radius: 10px;
     background-color: rgb(247, 48, 50);
     filter: sepia(1);
@@ -454,7 +447,6 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 70px;
     border-radius: 10px;
     background-color: #5372ff;
     filter: sepia(1);
@@ -683,8 +675,18 @@ footer:hover {
         background-size: cover;
         background-position: initial;
         display: flex;
-        align-items: flex-start;
+        align-items: start;
         justify-content: space-around;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .navbar-expand-md{
+        display: flex;
+        justify-content: space-between;
     }
 
     #logo {
@@ -700,6 +702,27 @@ footer:hover {
         font-size: 16px;
         padding: 2px;
         margin: 10px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .principalbio{
+        height: 2000px;
+    }
+    .foto {
+        height: 250px;
+        width: auto;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat 1fr;
+        grid-template-rows: repeat(3 , 1fr);
+        grid-template-areas: 
+        "fotobio1"
+        "fotobio2" 
+        "fotobio3";
     }
 
     .nav-link:hover {
@@ -710,6 +733,29 @@ footer:hover {
         background-image: url(./Background/background6.png);
         background-size: cover;
         background-position: center;
+        height: auto;
+    }
+
+    .principalbio{
+        background-image:url(./Background/background1.png); 
+        background-color: black;
+        background-size: cover;
+        background-position: initial; 
+        height: auto;
+    }
+    .foto{
+        height: 500px;
+        width: 350px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "fotobio1" 
+        "fotobio2"
+        "fotobio3";
     }
 
     .showtipo {
