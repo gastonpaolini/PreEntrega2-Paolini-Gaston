@@ -49,7 +49,9 @@ body {
 .principalbio {
     background-image: url(./Background/background11.png);
     background-size: cover;
-    background-position: initial;
+    background-position: inherit;
+    height: auto;
+
 }
 
 .principalcontacto {
@@ -132,17 +134,17 @@ body {
     font-family: "Instrument Serif", serif;
 }
 
-a {
+a{
     color: white;
     text-decoration: none;
     margin: 30px;
 }
 
-a:hover {
+a:hover{
     color: #1a1a1a;
 }
 
-h1 {
+h1{
     color: white;
     padding: 10px;
     margin: 0px;
@@ -723,8 +725,10 @@ footer:hover {
         width: auto;
     }
 
-    .bio {
-        font-size: 16px;
+    .principalbio {
+        height: auto;
+        width: auto;
+        background-color: black;
     }
 
     .foto {
@@ -732,13 +736,17 @@ footer:hover {
         padding: 10px;
         margin: 10px;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
             "fotobio1"
-            "fotobio2"
+            "fotobio2" 
             "fotobio3";
         place-items: center;
+    }
+
+    .show0{
+        font-size: 20px;
     }
 
     .showtipo {
