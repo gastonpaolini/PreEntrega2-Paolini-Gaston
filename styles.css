@@ -895,7 +895,7 @@ footer:hover {
     }
 
     footer{
-    height: 100%;
+    height: auto;
     }
     .pfooter{
         text-align: center;
