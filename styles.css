@@ -39,12 +39,6 @@ body {
     height: calc(100vh - 80px);
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-    padding: 20;
-}
 
 .principal {
     background-image: url(./Background/background4.jpg) !important;
@@ -58,6 +52,7 @@ header {
     background-size: cover;
     background-position: inherit;
     height: auto;
+
 }
 
 .principalcontacto {
@@ -72,12 +67,10 @@ header {
 
 .principalmedia {
     background-color: #1a1a1a;
+    height: auto;
+    width: auto;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-}
 
 .navbar-brand {
     display: flex;
@@ -117,6 +110,12 @@ header {
 .navbar-toggler .collapsed {
     display: flex;
     justify-content: end;
+}
+
+.navbar-nav {
+    z-index: +1;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -170,7 +169,7 @@ h1 {
     color: white;
     padding: 10px;
     margin: 20px;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Ricordi;
     text-align: center;
     background-color: #1a1a1ac0;
@@ -187,7 +186,7 @@ h1 {
     background-color: red;
 }
 
-.foto{
+.foto {
     height: 100%;
     width: auto;
     border-radius: 10px;
@@ -196,8 +195,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "fotobio1 fotobio2 fotobio3";
+    grid-template-areas:
+        "fotobio1 fotobio2 fotobio3";
 }
 
 .fotobio1 {
@@ -213,7 +212,7 @@ h1 {
     background: url(./Background/foto\ bio.jpg);
     background-size: cover;
     grid-area: fotobio1;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
@@ -232,7 +231,7 @@ h1 {
     background: url(./Background/foto\ bio2.jpg);
     background-size: cover;
     grid-area: fotobio2;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
@@ -251,11 +250,11 @@ h1 {
     background: url(./Background/foto\ bio3.jpg);
     background-size: cover;
     grid-area: fotobio3;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
-} 
+}
 
 /* --------------------------------------------------------------------------------------------------------- */
 
@@ -282,11 +281,11 @@ h1 {
     height: auto;
 }
 
-.show{
+.show {
     height: 70px;
 }
 
-.showp{
+.showp {
     height: auto;
 }
 
@@ -678,15 +677,16 @@ footer:hover {
         align-items: start;
         justify-content: space-around;
     }
-    
-    header{
-        display: flex;
-        justify-content: center;
+
+    .navbar-nav {
+        display: inline;
+        height: auto;
     }
 
-    .navbar .navbar-expand-md{
+    .navbar .navbar-expand-md {
         display: flex;
         justify-content: space-between;
+        z-index: +1
     }
 
     #logo {
@@ -706,9 +706,14 @@ footer:hover {
         justify-content: end;
     }
 
-    .principalbio{
+    .principalbio {
         height: 2000px;
     }
+
+    .bio {
+        font-size: 20px;
+    }
+
     .foto {
         height: 250px;
         width: auto;
@@ -718,11 +723,11 @@ footer:hover {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat 1fr;
-        grid-template-rows: repeat(3 , 1fr);
-        grid-template-areas: 
-        "fotobio1"
-        "fotobio2" 
-        "fotobio3";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "fotobio1"
+            "fotobio2"
+            "fotobio3";
     }
 
     .nav-link:hover {
@@ -734,16 +739,16 @@ footer:hover {
         background-size: cover;
         background-position: center;
         height: auto;
+        width: auto;
     }
 
-    .principalbio{
-        background-image:url(./Background/background1.png); 
-        background-color: black;
-        background-size: cover;
-        background-position: initial; 
+    .principalbio {
         height: auto;
+        width: auto;
+        background-color: black;
     }
-    .foto{
+
+    .foto {
         height: 500px;
         width: 350px;
         border-radius: 10px;
@@ -752,10 +757,10 @@ footer:hover {
         display: grid;
         grid-template-columns: repeat 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "fotobio1" 
-        "fotobio2"
-        "fotobio3";
+        grid-template-areas:
+            "fotobio1"
+            "fotobio2"
+            "fotobio3";
     }
 
     .showtipo {
@@ -771,9 +776,10 @@ footer:hover {
             "tipo6"
             "tipo7"
             "tipo8";
-            justify-content: center;
-            height: auto;
+        justify-content: center;
+        height: auto;
     }
+
     .galeria {
         height: auto;
         grid-template-columns: 1fr;
@@ -787,7 +793,7 @@ footer:hover {
             "item6"
             "item7"
             "item8";
-            height: 2000px;
+        height: 2000px;
     }
 
     .item1 {
@@ -824,13 +830,14 @@ footer:hover {
         align-items: center;
     }
 
-    .principalcontacto{
+    .principalcontacto {
         background-image: url(./Background/background8.jpg);
-        background-size: inherit ;
+        background-size: inherit;
         height: auto;
+        width: auto;
     }
 
-    .formulario1{
+    .formulario1 {
         font-size: 25px;
         padding: 10px;
         margin: 10px;
@@ -839,17 +846,18 @@ footer:hover {
         box-shadow: 0 0 5px #fff;
         border-radius: 10px;
     }
-    
-    label{
-        background-color:  rgba(247, 48, 51, 0.486);
+
+    label {
+        background-color: rgba(247, 48, 51, 0.486);
         margin: 5px;
         padding: 3px;
         border-radius: 10px;
     }
 
-    #icoment{
+    #icoment {
         display: flex;
     }
+
     .enviar {
         border-radius: 10px;
         padding: 5px;
@@ -861,11 +869,11 @@ footer:hover {
         font-family: "PT Sans Narrow", sans-serif;
         text-align: center;
     }
-    
+
     .enviar:hover {
         box-shadow: 0 0 5px white;
     }
-    
+
     .reset {
         border-radius: 10px;
         padding: 5px;
@@ -877,7 +885,7 @@ footer:hover {
         font-family: "PT Sans Narrow", sans-serif;
         text-align: center;
     }
-    
+
     .reset:hover {
         box-shadow: 0 0 5px white;
     }
