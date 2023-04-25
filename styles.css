@@ -573,10 +573,10 @@ h1 {
     font-size: 20px;
     padding: 10px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
+
 
 label {
     background-color: rgba(247, 48, 51, 0.486);
@@ -818,22 +818,24 @@ footer:hover {
 
     .formulario {
         font-size: 14px;
+        display: grid;
+        place-items: center;
     }
 
 
     .formulario1 {
-        font-size: 20px;
-        padding: 10px;
-        margin: 10px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 5px;
         background-color: #1a1a1ab7;
         font-family: "Instrument Serif", serif;
         box-shadow: 0 0 5px #fff;
         border-radius: 10px;
+        text-align: center;
     }
 
     #icoment {
-        display: grid;
-        place-items: center;
+        text-align: center;
     }
 
     .pfooter {
