@@ -48,9 +48,9 @@ body {
 }
 
 .principalbio {
-    background-image: url(./Background/background10.png);
+    background-image: url(./Background/background11.png);
     background-size: cover;
-    background-position: inherit;
+    background-position: initial;
     height: auto;
 
 }
@@ -138,23 +138,24 @@ body {
     font-family: "Instrument Serif", serif;
 }
 
-a {
+a{
     color: white;
     text-decoration: none;
     margin: 30px;
 }
 
-a:hover {
+a:hover{
     color: #1a1a1a;
 }
 
-h1 {
+h1{
     color: white;
     padding: 10px;
     margin: 0px;
     text-align: center;
     font-family: Bloverly;
 }
+
 
 .f-letter::first-letter {
     color: rgb(175, 6, 6);
@@ -164,11 +165,12 @@ h1 {
     background-color: #1a1a1ac0;
 }
 
+
 .bio {
     color: white;
     padding: 10px;
     margin: 20px;
-    font-size: 32px;
+    font-size: 20px;
     font-family: Ricordi;
     text-align: center;
     background-color: #1a1a1ac0;
@@ -182,11 +184,10 @@ h1 {
     font-size: 30px;
     font-family: Ricordi;
     text-align: center;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.623);
 }
 
 .foto {
-    height: 100%;
     width: auto;
     border-radius: 10px;
     padding: 10px;
@@ -748,24 +749,20 @@ footer:hover {
         width: auto;
     }
 
-    .principalbio {
-        height: auto;
-        width: auto;
-        background-color: black;
+    .bio{
+        font-size: 16px;
     }
 
     .foto {
-        height: 500px;
-        width: 350px;
         border-radius: 10px;
         padding: 10px;
         margin: 10px;
         display: grid;
-        grid-template-columns: repeat 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat( 3, 1fr);
         grid-template-areas:
             "fotobio1"
-            "fotobio2"
+            "fotobio2" 
             "fotobio3";
     }
 
