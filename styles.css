@@ -185,29 +185,39 @@ h1{
 
 .foto {
     width: auto;
-    border-radius: 10px;
     padding: 10px;
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
-        "fotobio1 fotobio2 fotobio3";
+        "foto1 foto2 foto3";
 }
 
-.fotobio1 {
+.fotos{
     background-image: url(./Background/dorsos.png);
-    grid-area: fotobio1;
-    background-size: cover;
-    height: 70vh;
-    width: 50vh;
+    grid-area: foto2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50%;
     transition: all 0.9s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
 }
 
-.fotobio1:hover {
+.foto1 {
+    grid-area: foto1;
+
+}
+
+.foto1:hover {
     background: url(./Background/foto\ bio.jpg);
     background-size: cover;
-    grid-area: fotobio1;
+    background-position: center;
+    grid-area: foto1;
     border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
@@ -215,38 +225,31 @@ h1{
 
 }
 
-.fotobio2 {
-    background: url(./Background/dorsos.png);
-    grid-area: fotobio2;
-    background-size: cover;
-    height: 70vh;
-    width: 50vh;
-    transition: all 0.9s;
+.foto2 {
+    grid-area: foto2;
 }
 
-.fotobio2:hover {
+.foto2:hover {
     background: url(./Background/foto\ bio2.jpg);
     background-size: cover;
-    grid-area: fotobio2;
+    background-position: center;
+    grid-area: foto2;
     border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
     transition: all 0.9s;
 }
 
-.fotobio3 {
-    background: url(./Background/dorsos.png);
-    grid-area: fotobio3;
-    background-size: cover;
-    height: 70vh;
-    width: 50vh;
-    transition: all 0.9s;
+.foto3 {
+    grid-area: foto3;
+
 }
 
-.fotobio3:hover {
+.foto3:hover {
     background: url(./Background/foto\ bio3.jpg);
     background-size: cover;
-    grid-area: fotobio3;
+    background-position: center;
+    grid-area: foto3;
     border-radius: 10px;
     box-shadow: 0 0 15px white;
     border: solid 3px white;
@@ -278,7 +281,7 @@ h1{
     height: auto;
 }
 
-.show {
+.shows {
     height: 70px;
 }
 
@@ -658,7 +661,9 @@ footer:hover {
     right: 10px;
     bottom: 1px;
     color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 45px;
     font-size: 30px;
 }
@@ -736,13 +741,14 @@ footer:hover {
         padding: 10px;
         margin: 10px;
         display: grid;
-        grid-template-columns: repeat 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
         grid-template-areas:
-            "fotobio1"
-            "fotobio2" 
-            "fotobio3";
+            "foto1"
+            "foto2" 
+            "foto3";
         place-items: center;
+        
     }
 
     .show0{
@@ -806,17 +812,6 @@ footer:hover {
         padding-bottom: 20px;
     }
 
-    .subir {
-        height: 30px;
-        width: 30px;
-        right: 2px;
-        bottom: 0px;
-        line-height: 30px;
-        font-size: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
     .principalcontacto {
         background-image: url(./Background/background8.jpg);
         background-size: inherit;
@@ -857,4 +852,12 @@ footer:hover {
         justify-content: center;
         height: auto;
     }
+    .subir {
+        height: 25px;
+        width: 25px;
+        right: 10px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
 }
