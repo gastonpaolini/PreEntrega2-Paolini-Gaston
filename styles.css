@@ -256,6 +256,20 @@ h1{
     transition: all 0.9s;
 }
 
+.act1:active{
+    transform: rotate(180deg);
+    background-image: url(./Background/7corazon.png);
+}
+
+.act2:active{
+    transform: rotate(180deg);
+    background-image: url(./Background/4pica.png);
+}
+
+.act3:active{
+    transform: rotate(180deg);
+    background-image: url(./Background/5corazon.png);
+}
 /* --------------------------------------------------------------------------------------------------------- */
 
 .show0 {
@@ -582,6 +596,21 @@ h1{
     place-items: center;
 }
 
+input{
+    color:whitesmoke;
+    background-color: #1a1a1a;
+}
+
+input::placeholder{
+    color: #3f3d3d;
+    text-transform: capitalize;
+    
+}
+
+.act:focus{
+    background-color: #5372ff;
+    box-shadow: 0 0 3px white;
+}
 
 label {
     background-color: rgba(247, 48, 51, 0.486);
