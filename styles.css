@@ -134,17 +134,17 @@ body {
     font-family: "Instrument Serif", serif;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     margin: 30px;
 }
 
-a:hover{
+a:hover {
     color: #1a1a1a;
 }
 
-h1{
+h1 {
     color: white;
     padding: 10px;
     margin: 0px;
@@ -194,7 +194,7 @@ h1{
         "foto1 foto2 foto3";
 }
 
-.fotos{
+.fotos {
     background-image: url(./Background/dorsos.png);
     grid-area: foto2;
     background-size: 100%;
@@ -256,20 +256,21 @@ h1{
     transition: all 0.9s;
 }
 
-.act1:active{
+.act1:active {
     transform: rotate(180deg);
     background-image: url(./Background/7corazon.png);
 }
 
-.act2:active{
+.act2:active {
     transform: rotate(180deg);
     background-image: url(./Background/4pica.png);
 }
 
-.act3:active{
+.act3:active {
     transform: rotate(180deg);
     background-image: url(./Background/5corazon.png);
 }
+
 /* --------------------------------------------------------------------------------------------------------- */
 
 .show0 {
@@ -596,18 +597,18 @@ h1{
     place-items: center;
 }
 
-input{
-    color:whitesmoke;
+input {
+    color: whitesmoke;
     background-color: #1a1a1a;
 }
 
-input::placeholder{
+input::placeholder {
     color: #3f3d3d;
     text-transform: capitalize;
-    
+
 }
 
-.act:focus{
+.act:focus {
     background-color: #5372ff;
     box-shadow: 0 0 3px white;
 }
@@ -771,16 +772,21 @@ footer:hover {
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto; 
+        grid-template-rows: auto;
         grid-template-areas:
             "foto1"
-            "foto2" 
+            "foto2"
             "foto3";
         place-items: center;
-        
+
     }
 
-    .show0{
+    .act1:active {
+        height: auto;
+        width: auto;
+    }
+
+    .show0 {
         font-size: 20px;
     }
 
@@ -828,19 +834,6 @@ footer:hover {
         background-position-y: center;
     }
 
-    #pfooter {
-        font-size: 21px;
-        padding: 2px;
-    }
-
-    .redes2 {
-        font-size: 21px;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 20px;
-    }
-
     .principalcontacto {
         background-image: url(./Background/background8.jpg);
         background-size: inherit;
@@ -881,6 +874,21 @@ footer:hover {
         justify-content: center;
         height: auto;
     }
+
+
+    #pfooter {
+        font-size: 21px;
+        padding: 2px;
+    }
+
+    .redes2 {
+        font-size: 21px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
     .subir {
         height: 25px;
         width: 25px;
