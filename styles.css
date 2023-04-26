@@ -715,8 +715,6 @@ footer:hover {
 }
 
 @media only screen and (max-width: 768px) {
-
-    /* Estas propiedades de CSS solo se ejecutaran cuando la pantalla sea menos ancha que 768 */
     .principal {
         background-position: initial;
         display: flex;
@@ -732,7 +730,6 @@ footer:hover {
     .navbar .navbar-expand-md {
         display: flex;
         justify-content: space-between;
-        z-index: +1
     }
 
     #logo {
@@ -750,6 +747,7 @@ footer:hover {
         margin: 10px;
         display: flex;
         justify-content: end;
+        text-shadow: 0 0 5px black;
     }
 
     .principalbio {
