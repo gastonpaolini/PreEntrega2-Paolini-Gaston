@@ -259,16 +259,22 @@ h1 {
 .act1:active {
     transform: rotate(180deg);
     background-image: url(./Background/7corazon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .act2:active {
     transform: rotate(180deg);
     background-image: url(./Background/4pica.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .act3:active {
     transform: rotate(180deg);
     background-image: url(./Background/5corazon.png);
+        background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
@@ -779,11 +785,6 @@ footer:hover {
             "foto3";
         place-items: center;
 
-    }
-
-    .act1:active {
-        height: auto;
-        width: auto;
     }
 
     .show0 {
