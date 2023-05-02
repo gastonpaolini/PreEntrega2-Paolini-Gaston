@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -514,190 +515,47 @@ h1 {
 
 /* --------------------------------------------------------------------------------------------------------- */
 
-.galeria {
+.galeria{
     background-color: silver;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-        "item1 item1 item3 item3"
-        "item4 item4 item2 item8"
-        "item6 item7 item5 item8";
+    grid-template-columns: repeat(4 , 1fr) ;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-areas: 
+    "item1 item1 item3 item3"
+    "item4 item4 item2 item8"
+    "item6 item7 item5 item8";
     height: 100vh;
 }
 
-.item1-img {
-    background-image: url(./media/imgitem1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item1;
+@each $item in item1,item2,item3,item4,item5,item6,item7,item8{
+    .#{$item}-img{
+        background-image: url(./media/img#{$item}.jpg);
+        background-size: cover;
+        background-position: center;
+        // height: 450px;
+        // width: 450px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        filter: grayscale(1);
+        transition: all 1.09s;
+        grid-area: $item;
+    }
 }
 
-.item2-img {
-    background-image: url(./media/imgitem2.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item2;
+@each $item in item1,item2,item3,item4,item5,item6,item7,item8{
+    .#{$item}-img:hover{
+        filter: grayscale(0);
+        transition: all 1.09s;
+        box-shadow: 0 0 5px white;
+        border: 3px solid white;
+        scale: 1.30;
+        z-index: 1;
+    }
 }
-
-.item3-img {
-    background-image: url(./media/imgitem3.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item3;
-}
-
-.item4-img {
-    background-image: url(./media/imgitem4.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item4;
-}
-
-.item5-img {
-    background-image: url(./media/imgitem5.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item5;
-}
-
-.item6-img {
-    background-image: url(./media/imgitem6.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item6;
-}
-
-.item7-img {
-    background-image: url(./media/imgitem7.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item7;
-}
-
-.item8-img {
-    background-image: url(./media/imgitem8.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-    filter: grayscale(1);
-    transition: all 1.09s;
-    grid-area: item8;
-}
-
-.item1-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item2-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item3-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item4-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item5-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item6-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item7-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-.item8-img:hover {
-    filter: grayscale(0);
-    transition: all 1.09s;
-    box-shadow: 0 0 5px white;
-    border: 3px solid white;
-    scale: 1.3;
-    z-index: 1;
-}
-
-/*# sourceMappingURL=estilos.css.map */
-
 
 /* --------------------------------------------------------------------------------------------------------- */
+
 .formulario {
     color: white;
     display: inline;
@@ -912,23 +770,6 @@ footer:hover {
         justify-content: center;
         height: auto;
     }
-
-    .galeria {
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "item1"
-            "item2"
-            "item3"
-            "item4"
-            "item5"
-            "item6"
-            "item7"
-            "item8";
-        height: calc(100vh *2);
-    }
-
 
     .item1 {
         background-size: cover;
